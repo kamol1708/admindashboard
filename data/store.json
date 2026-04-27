@@ -1,0 +1,475 @@
+{
+  "students": [
+    {
+      "id": "76f8aebc-8695-4a5e-b262-9bb391e7347a",
+      "fullName": "jamshid",
+      "group": "1kt",
+      "phone": "998909999009",
+      "parentPhone": "998909998877",
+      "joinedAt": "2026-04-14T04:25:26.578Z",
+      "status": "removed",
+      "balance": 0,
+      "notes": "buba",
+      "grades": [],
+      "attendance": [
+        {
+          "id": "46483e34-601f-4354-8e68-4caadf7cbcca",
+          "date": "2026-04-06",
+          "status": "absent",
+          "lesson": "Mental Math",
+          "topic": "Mavzu kiritilmagan",
+          "homework": 70
+        }
+      ],
+      "payments": []
+    },
+    {
+      "id": "std-001",
+      "fullName": "Madina Ergasheva",
+      "group": "IELTS Evening",
+      "phone": "+998 90 111 22 33",
+      "parentPhone": "+998 90 777 66 55",
+      "joinedAt": "2026-01-14T09:00:00.000Z",
+      "status": "active",
+      "balance": 120000,
+      "notes": "Speaking bo'yicha yaxshi, writing uchun qo'shimcha topshiriq berilgan.",
+      "payments": [
+        {
+          "id": "pay-001",
+          "amount": 120000,
+          "paidAt": "2026-04-01",
+          "method": "transfer",
+          "note": "Aprel to'lovi"
+        }
+      ],
+      "grades": [
+        {
+          "id": "gr-001",
+          "subject": "Mock Exam",
+          "score": 82,
+          "maxScore": 100,
+          "examDate": "2026-04-05",
+          "note": "Band 6.5ga yaqin"
+        },
+        {
+          "id": "gr-002",
+          "subject": "Vocabulary Quiz",
+          "score": 18,
+          "maxScore": 20,
+          "examDate": "2026-04-02",
+          "note": "Stable"
+        }
+      ],
+      "attendance": [
+        {
+          "id": "8083c971-4225-4c28-a496-0750572d9663",
+          "date": "2026-04-06",
+          "status": "present",
+          "lesson": "Mental Math",
+          "topic": "Mavzu kiritilmagan",
+          "homework": 5
+        },
+        {
+          "id": "at-001",
+          "date": "2026-04-10",
+          "status": "present",
+          "lesson": "Speaking Drill",
+          "topic": "",
+          "homework": 0
+        },
+        {
+          "id": "at-002",
+          "date": "2026-04-08",
+          "status": "present",
+          "lesson": "Mock Analysis",
+          "topic": "",
+          "homework": 0
+        },
+        {
+          "id": "at-003",
+          "date": "2026-04-07",
+          "status": "late",
+          "lesson": "Essay Feedback",
+          "topic": "",
+          "homework": 0
+        }
+      ]
+    },
+    {
+      "id": "std-002",
+      "fullName": "Javohir Qodirov",
+      "group": "Frontend Bootcamp",
+      "phone": "+998 91 123 45 67",
+      "parentPhone": "+998 91 888 44 22",
+      "joinedAt": "2026-02-03T11:00:00.000Z",
+      "status": "removed",
+      "balance": -50000,
+      "notes": "Dars qoldirishi ko'paygan. Ota-onaga eslatma yuborish kerak.",
+      "payments": [
+        {
+          "id": "pay-002",
+          "amount": 80000,
+          "paidAt": "2026-03-29",
+          "method": "cash",
+          "note": "Qisman to'lov"
+        }
+      ],
+      "grades": [
+        {
+          "id": "gr-003",
+          "subject": "React Module",
+          "score": 58,
+          "maxScore": 100,
+          "examDate": "2026-04-04",
+          "note": "Hooks mavzusida qiynalmoqda"
+        },
+        {
+          "id": "gr-004",
+          "subject": "JavaScript Quiz",
+          "score": 12,
+          "maxScore": 20,
+          "examDate": "2026-04-01",
+          "note": "Asoslar qayta ko'rilishi kerak"
+        }
+      ],
+      "attendance": [
+        {
+          "id": "7ebb6ee3-4b70-41ac-9f49-e64826aad428",
+          "date": "2026-04-06",
+          "status": "present",
+          "lesson": "Mental Math",
+          "topic": "Mavzu kiritilmagan",
+          "homework": 0
+        },
+        {
+          "id": "at-004",
+          "date": "2026-04-10",
+          "status": "absent",
+          "lesson": "State Management",
+          "topic": "",
+          "homework": 0
+        },
+        {
+          "id": "at-005",
+          "date": "2026-04-08",
+          "status": "late",
+          "lesson": "API Integration",
+          "topic": "",
+          "homework": 0
+        },
+        {
+          "id": "at-006",
+          "date": "2026-04-07",
+          "status": "absent",
+          "lesson": "Components Practice",
+          "topic": "",
+          "homework": 0
+        }
+      ]
+    },
+    {
+      "id": "std-003",
+      "fullName": "Sevinch Toirova",
+      "group": "Kids Math",
+      "phone": "+998 93 222 00 99",
+      "parentPhone": "+998 93 555 44 11",
+      "joinedAt": "2026-03-10T08:30:00.000Z",
+      "status": "active",
+      "balance": 0,
+      "notes": "Davomati juda yaxshi, olimpiada guruhiga tavsiya qilinadi.",
+      "payments": [
+        {
+          "id": "pay-003",
+          "amount": 50000,
+          "paidAt": "2026-04-03",
+          "method": "card",
+          "note": "To'liq to'landi"
+        }
+      ],
+      "grades": [
+        {
+          "id": "gr-005",
+          "subject": "Weekly Test",
+          "score": 46,
+          "maxScore": 50,
+          "examDate": "2026-04-06",
+          "note": "Excellent"
+        }
+      ],
+      "attendance": [
+        {
+          "id": "at-007",
+          "date": "2026-04-10",
+          "status": "present",
+          "lesson": "Fractions",
+          "topic": "",
+          "homework": 0
+        },
+        {
+          "id": "at-008",
+          "date": "2026-04-08",
+          "status": "present",
+          "lesson": "Geometry",
+          "topic": "",
+          "homework": 0
+        },
+        {
+          "id": "at-009",
+          "date": "2026-04-06",
+          "status": "present",
+          "lesson": "Mental Math",
+          "topic": "",
+          "homework": 0
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "grp-001",
+      "name": "IELTS Evening",
+      "teacher": "Azizbek Rahimov",
+      "schedule": "Du-Chor-Juma 18:00",
+      "room": "Room A1",
+      "monthlyFee": 120000
+    },
+    {
+      "id": "grp-002",
+      "name": "Frontend Bootcamp",
+      "teacher": "Bekzod Karimov",
+      "schedule": "Sesh-Payshanba 19:00",
+      "room": "Lab 2",
+      "monthlyFee": 180000
+    },
+    {
+      "id": "grp-003",
+      "name": "Kids Math",
+      "teacher": "Malika Sobirova",
+      "schedule": "Du-Sesh-Payshanba 15:00",
+      "room": "Room B3",
+      "monthlyFee": 50000
+    }
+  ],
+  "users": [
+    {
+      "id": "admin-001",
+      "fullName": "Azizbek Rahimov",
+      "email": "admin@hems.uz",
+      "password": "Admin123!",
+      "role": "admin"
+    }
+  ],
+  "attendanceRecords": [
+    {
+      "id": "46483e34-601f-4354-8e68-4caadf7cbcca",
+      "studentId": "76f8aebc-8695-4a5e-b262-9bb391e7347a",
+      "date": "2026-04-06",
+      "lessonTitle": "Mental Math",
+      "topic": "Mavzu kiritilmagan",
+      "status": "absent",
+      "reason": "no_reason",
+      "lateMinutes": 0,
+      "earlyLeave": false,
+      "participationScore": 4,
+      "homeworkStatus": "done",
+      "dailyGrade": 70,
+      "comment": "",
+      "recordedAt": "2026-04-06T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "8083c971-4225-4c28-a496-0750572d9663",
+      "studentId": "std-001",
+      "date": "2026-04-06",
+      "lessonTitle": "Mental Math",
+      "topic": "Mavzu kiritilmagan",
+      "status": "present",
+      "reason": "no_reason",
+      "lateMinutes": 0,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "done",
+      "dailyGrade": 5,
+      "comment": "",
+      "recordedAt": "2026-04-06T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "at-001",
+      "studentId": "std-001",
+      "date": "2026-04-10",
+      "lessonTitle": "Speaking Drill",
+      "topic": "",
+      "status": "present",
+      "reason": "no_reason",
+      "lateMinutes": 0,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "not_done",
+      "dailyGrade": 0,
+      "comment": "",
+      "recordedAt": "2026-04-10T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "at-002",
+      "studentId": "std-001",
+      "date": "2026-04-08",
+      "lessonTitle": "Mock Analysis",
+      "topic": "",
+      "status": "present",
+      "reason": "no_reason",
+      "lateMinutes": 0,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "not_done",
+      "dailyGrade": 0,
+      "comment": "",
+      "recordedAt": "2026-04-08T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "at-003",
+      "studentId": "std-001",
+      "date": "2026-04-07",
+      "lessonTitle": "Essay Feedback",
+      "topic": "",
+      "status": "present",
+      "reason": "no_reason",
+      "lateMinutes": 10,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "not_done",
+      "dailyGrade": 0,
+      "comment": "",
+      "recordedAt": "2026-04-07T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "7ebb6ee3-4b70-41ac-9f49-e64826aad428",
+      "studentId": "std-002",
+      "date": "2026-04-06",
+      "lessonTitle": "Mental Math",
+      "topic": "Mavzu kiritilmagan",
+      "status": "present",
+      "reason": "no_reason",
+      "lateMinutes": 0,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "not_done",
+      "dailyGrade": 0,
+      "comment": "",
+      "recordedAt": "2026-04-06T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "at-004",
+      "studentId": "std-002",
+      "date": "2026-04-10",
+      "lessonTitle": "State Management",
+      "topic": "",
+      "status": "absent",
+      "reason": "no_reason",
+      "lateMinutes": 0,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "not_done",
+      "dailyGrade": 0,
+      "comment": "",
+      "recordedAt": "2026-04-10T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "at-005",
+      "studentId": "std-002",
+      "date": "2026-04-08",
+      "lessonTitle": "API Integration",
+      "topic": "",
+      "status": "present",
+      "reason": "no_reason",
+      "lateMinutes": 10,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "not_done",
+      "dailyGrade": 0,
+      "comment": "",
+      "recordedAt": "2026-04-08T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "at-006",
+      "studentId": "std-002",
+      "date": "2026-04-07",
+      "lessonTitle": "Components Practice",
+      "topic": "",
+      "status": "absent",
+      "reason": "no_reason",
+      "lateMinutes": 0,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "not_done",
+      "dailyGrade": 0,
+      "comment": "",
+      "recordedAt": "2026-04-07T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "at-007",
+      "studentId": "std-003",
+      "date": "2026-04-10",
+      "lessonTitle": "Fractions",
+      "topic": "",
+      "status": "present",
+      "reason": "no_reason",
+      "lateMinutes": 0,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "not_done",
+      "dailyGrade": 0,
+      "comment": "",
+      "recordedAt": "2026-04-10T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "at-008",
+      "studentId": "std-003",
+      "date": "2026-04-08",
+      "lessonTitle": "Geometry",
+      "topic": "",
+      "status": "present",
+      "reason": "no_reason",
+      "lateMinutes": 0,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "not_done",
+      "dailyGrade": 0,
+      "comment": "",
+      "recordedAt": "2026-04-08T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    },
+    {
+      "id": "at-009",
+      "studentId": "std-003",
+      "date": "2026-04-06",
+      "lessonTitle": "Mental Math",
+      "topic": "",
+      "status": "present",
+      "reason": "no_reason",
+      "lateMinutes": 0,
+      "earlyLeave": false,
+      "participationScore": 1,
+      "homeworkStatus": "not_done",
+      "dailyGrade": 0,
+      "comment": "",
+      "recordedAt": "2026-04-06T08:00:00.000Z",
+      "recordedByUserId": "admin-001"
+    }
+  ],
+  "notifications": [],
+  "auditLogs": [],
+  "settings": {
+    "attendanceThresholdPercent": 70,
+    "consecutiveAbsenceThreshold": 3,
+    "restrictPastAttendanceEdits": true
+  }
+}
