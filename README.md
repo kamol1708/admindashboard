@@ -52,6 +52,12 @@ npm run dev
 http://localhost:3000
 ```
 
+## Clone qilgandan keyin nima bo'ladi
+
+- loyiha birinchi ishga tushganda `data/store.json` dan demo ma'lumotlarni SQLite bazaga auto-seed qiladi
+- `.env` to'g'ri bo'lsa admin panelga kirish mumkin
+- Telegram token bo'lmasa asosiy dashboard baribir ishlaydi, faqat Telegram funksiyalari cheklangan bo'ladi
+
 ## Build
 
 ```bash
@@ -96,6 +102,7 @@ APP_LOGIN_URL=http://localhost:3000/login
 - Qo'shimcha seed/store ma'lumotlari: `data/store.json`
 
 `data/*.db` GitHub'ga push qilinmaydi.
+Demo ma'lumotlar `data/store.json` orqali repo ichida saqlanadi.
 
 ## Muhim eslatma
 

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getCurrentSession, jsonError } from "@/lib/controllers/http";
-import { requireRole } from "@/lib/services/auth-service";
+import { requireRole, teacherOwnsGroup } from "@/lib/services/auth-service";
 import { getAnalyticsSnapshot } from "@/lib/services/analytics-service";
 import { loadStore } from "@/lib/repositories/system-repository";
 
@@ -19,7 +19,24 @@ export async function notificationsController() {
   const notifications =
     session.role === "student" && session.linkedStudentId
       ? store.notifications.filter((notification) => notification.studentId === session.linkedStudentId)
-      : store.notifications;
+      : session.role === "teacher"
+        ? (() => {
+            const allowedGroups = new Set(
+              store.groups
+                .filter((group) =>
+                  teacherOwnsGroup(group.teacher, {
+                    name: session.name,
+                    email: session.email,
+                  }),
+                )
+                .map((group) => group.name),
+            );
+            const allowedStudentIds = new Set(
+              store.students.filter((student) => allowedGroups.has(student.group)).map((student) => student.id),
+            );
+            return store.notifications.filter((notification) => allowedStudentIds.has(notification.studentId));
+          })()
+        : store.notifications;
   return NextResponse.json(notifications);
 }
 
