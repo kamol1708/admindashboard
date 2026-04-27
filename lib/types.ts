@@ -71,7 +71,6 @@ export interface AppUser {
   id: string;
   fullName: string;
   email: string;
-  password: string;
   role: UserRole;
   linkedStudentId?: string;
 }

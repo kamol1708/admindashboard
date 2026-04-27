@@ -55,6 +55,16 @@ function averageGrades(grades: GradeEntry[]) {
   return Math.round((total / grades.length) * 10) / 10;
 }
 
+function toPublicUser(user: Awaited<ReturnType<typeof loadStore>>["users"][number]): AppUser {
+  return {
+    id: user.id,
+    fullName: user.fullName,
+    email: user.email,
+    role: user.role,
+    linkedStudentId: user.linkedStudentId,
+  } satisfies AppUser;
+}
+
 function deriveStatus(student: Student, attendancePercentage: number): StudentStatus {
   if (!student.attendance.length && !student.grades.length) return student.status ?? "active";
 
@@ -142,17 +152,7 @@ export async function getDashboardData(): Promise<DashboardResponse> {
       };
     }) satisfies Enrollment[],
     billing,
-    users: store.users.map(
-      (user) =>
-        ({
-          id: user.id,
-          fullName: user.fullName,
-          email: user.email,
-          password: user.password,
-          role: user.role,
-          linkedStudentId: user.linkedStudentId,
-        }) satisfies AppUser,
-    ),
+    users: store.users.map(toPublicUser),
   };
 }
 
@@ -197,7 +197,6 @@ export async function createTeacherAccount(payload: {
     id: result.user.id,
     fullName: result.user.fullName,
     email: result.user.email,
-    password: result.user.password,
     role: result.user.role,
   } satisfies AppUser;
 }
@@ -209,7 +208,6 @@ export async function findUserByCredentials(email: string, password: string) {
     id: user.id,
     fullName: user.fullName,
     email: user.email,
-    password: user.password,
     role: user.role,
     linkedStudentId: user.linkedStudentId,
   } satisfies AppUser;

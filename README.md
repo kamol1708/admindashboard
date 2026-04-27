@@ -34,13 +34,19 @@ Next.js asosidagi o'quv markaz boshqaruv paneli. Bu loyiha orqali:
 npm install
 ```
 
-2. Dev serverni yoqing:
+2. Environment fayl yarating:
+
+```bash
+cp .env.example .env
+```
+
+3. Dev serverni yoqing:
 
 ```bash
 npm run dev
 ```
 
-3. Brauzerda oching:
+4. Brauzerda oching:
 
 ```text
 http://localhost:3000
@@ -72,6 +78,7 @@ Loyiha `.env` orqali ishlaydi. Muhim o'zgaruvchilar:
 
 ```env
 AUTH_COOKIE_NAME=edu_admin_session
+SESSION_SECRET=change-this-to-a-long-random-secret
 ADMIN_EMAIL=admin@hems.uz
 ADMIN_PASSWORD=Admin123!
 ADMIN_NAME=Azizbek Rahimov
@@ -94,7 +101,7 @@ APP_LOGIN_URL=http://localhost:3000/login
 
 Bu loyiha hozircha ichki foydalanish va MVP darajasiga yaqin. Productionga chiqarishdan oldin:
 
-- auth/session security kuchaytirish
+- SESSION_SECRET ni kuchli random qiymatga almashtirish
 - testlar qo'shish
 - payment gateway integratsiya qilish
 - secret managementni yaxshilash

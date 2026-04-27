@@ -4,13 +4,23 @@ import { requireRole } from "@/lib/services/auth-service";
 import { createTeacherUser } from "@/lib/services/student-service";
 import { loadStore } from "@/lib/repositories/system-repository";
 
+function toPublicUser(user: Awaited<ReturnType<typeof loadStore>>["users"][number]) {
+  return {
+    id: user.id,
+    fullName: user.fullName,
+    email: user.email,
+    role: user.role,
+    linkedStudentId: user.linkedStudentId,
+  };
+}
+
 export async function GET() {
   const session = await getCurrentSession();
   const auth = requireRole(session, ["admin"]);
   if (!auth.ok) return jsonError(auth.error, auth.status);
 
   const store = await loadStore();
-  return NextResponse.json(store.users);
+  return NextResponse.json(store.users.map(toPublicUser));
 }
 
 export async function POST(request: Request) {
@@ -34,5 +44,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: result.error }, { status: 400 });
   }
 
-  return NextResponse.json(result.user, { status: 201 });
+  return NextResponse.json(toPublicUser(result.user), { status: 201 });
 }

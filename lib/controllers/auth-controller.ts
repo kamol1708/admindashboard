@@ -14,7 +14,7 @@ export async function loginController(request: Request) {
     cookieStore.set(AUTH_COOKIE, encodeSession(toSessionPayload(user)), {
       httpOnly: true,
       sameSite: "lax",
-      secure: false,
+      secure: process.env.NODE_ENV === "production",
       path: "/",
       maxAge: 60 * 60 * 24 * 7,
     });
